@@ -7,7 +7,7 @@
 
 :root {
   --primary-color: hsla(199, 91%, 17%, 1);
-  --secondary-color: #6c757d;
+  --secondary-color: hsla(41, 86%, 59%, 1);
   --accent-color: #28a745;
   --font-family: 'Lato', Arial, sans-serif;
   --base-font-size: 16px;
@@ -37,6 +37,7 @@ h1 {
 h2 {
   font-size: 1.75rem;
   margin: calc(var(--spacing-unit) * 2) 0;
+  line-height: 4.5rem;
 }
 
 h3 {
@@ -283,4 +284,51 @@ button,
   .trusted-brands {
     justify-content: center;
   }
+}
+
+/* Video section */
+.video-section {
+  background-color: var(--primary-color);
+  color: white;
+}
+.video-section .text-container {
+  padding-top: 6.25rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.video-section h2 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  max-width: 600px;
+}
+.video-section h2 span {
+  color: var(--secondary-color);
+}
+.video-section p {
+  max-width: 432px;
+}
+
+.video-section .video-container img {
+  max-width: 100%;
+  margin-bottom: -6px;
+}
+
+.video-container {
+  position: relative;
+}
+.video-container .play-btn {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
