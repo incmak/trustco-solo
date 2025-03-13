@@ -1,37 +1,36 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-
 :root {
   --primary-color: #007bff;
   --secondary-color: #6c757d;
   --accent-color: #28a745;
-  --font-family: 'Helvetica Neue', Arial, sans-serif;
+  --font-family: 'Lato', Arial, sans-serif;
   --base-font-size: 16px;
   --line-height: 1.5;
   --spacing-unit: 8px;
 }
 
-
 body {
   font-family: var(--font-family);
   font-size: var(--base-font-size);
   line-height: var(--line-height);
-  margin: 0;
   padding: 0;
   background-color: #fff;
-  color: #333;
+  color: hsla(229, 23%, 9%, 1);
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-
 h1 {
-  font-size: 2rem; 
+  font-size: 4rem;
   margin: calc(var(--spacing-unit) * 2) 0;
+  line-height: 4.5rem;
+  font-weight: 800;
 }
 
 h2 {
@@ -59,12 +58,10 @@ h6 {
   margin: calc(var(--spacing-unit) * 2) 0;
 }
 
-
 p {
-  font-size: 1rem;
+  font-size: 1.25rem; /* 20px */
   margin: var(--spacing-unit) 0;
 }
-
 
 a {
   color: var(--primary-color);
@@ -73,4 +70,31 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+.text-center {
+  text-align: center;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* HERO */
+.hero {
+  background: hsla(195, 18%, 96%, 1);
+  height: 100dvh;
+}
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.hero-content .main {
+  max-width: 710px;
+}
+
+.hero-content p {
+  font-weight: 500;
+  margin-top: -1rem;
 }
