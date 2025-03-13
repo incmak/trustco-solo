@@ -22,8 +22,8 @@ body {
   padding: 0;
   background-color: #fff;
   color: hsla(229, 23%, 9%, 1);
-  max-width: 1440px;
-  margin: 0 auto;
+  /* max-width: 1440px; */
+  margin: 0;
 }
 
 h1 {
@@ -75,7 +75,7 @@ a:hover {
   text-align: center;
 }
 .container {
-  max-width: 1140px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -97,4 +97,8 @@ a:hover {
 .hero-content p {
   font-weight: 500;
   margin-top: -1rem;
+}
+
+.hero-content img {
+  width: 200px;
 }
