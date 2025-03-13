@@ -297,6 +297,7 @@ button,
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .video-section h2 {
   font-size: 3.75rem;
@@ -331,4 +332,17 @@ button,
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .video-section .text-container {
+    padding-top: 3.125rem;
+    padding-bottom: 2rem;
+  }
+  .video-section h2 {
+    font-size: 1.875rem;
+    line-height: 2rem;
+  }
+  .video-container .play-btn svg {
+    width: 40px;
+  }
 }
