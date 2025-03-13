@@ -179,3 +179,15 @@ button,
     align-items: center;
   }
 }
+
+/* Trusted Brands */
+.trusted-brands {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+  justify-content: space-between;
+}
+.trusted-brands p {
+  font-size: 1rem;
+  font-weight: 500;
+}
