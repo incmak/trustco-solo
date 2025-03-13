@@ -127,7 +127,7 @@ button,
 /* HERO */
 .hero {
   background: hsla(195, 18%, 96%, 1);
-  height: 100dvh;
+  min-height: 100dvh;
   padding: 2rem 0;
 }
 .hero-content {
@@ -184,10 +184,30 @@ button,
 .trusted-brands {
   display: flex;
   align-items: center;
-  padding: 50px 0;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-block: 50px;
 }
 .trusted-brands p {
   font-size: 1rem;
   font-weight: 500;
+}
+
+.trusted-brands .brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 2.5rem;
+  row-gap: 1.25rem;
+}
+
+.trusted-brands svg {
+  width: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  .trusted-brands {
+    justify-content: center;
+  }
 }
